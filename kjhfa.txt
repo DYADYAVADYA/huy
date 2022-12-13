@@ -1,0 +1,13 @@
+first_name = set(input('First name: '))
+last_name = set(input('Last name: '))
+print(first_name)
+print(last_name)
+print(f'Common symbols: {first_name.intersection(last_name)}')
+print(f'Available only in first: {first_name.difference(last_name)}')
+print(f'All of the symbols: {first_name.union(last_name)}')
+print(last_name.difference(first_name))
+# 2
+formula = set(input('Enter the formula: '))
+digits = set([str(i) for i in range(10)])
+operations = {'-','+','/','*','^'}
+print(f'Used digits: {formula.intersection(digits)}\nNot used digits {digits.difference(formula)}\nUsed operations {formula.intersection(operations)}\nNot used operations {operations.difference(formula)}')
